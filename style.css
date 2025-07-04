@@ -549,6 +549,10 @@ button:hover {
 /* ========================= */
 @media screen and (max-width: 1081px) {
   /* ============ HEADER ============ */
+    body {
+        width: 100%;
+    }
+    
   header {
     height: auto;
     padding-bottom: 20px;

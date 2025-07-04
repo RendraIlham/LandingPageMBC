@@ -565,8 +565,8 @@ button:hover {
   }
 
   .header-left-group img {
-    height: 250px;
-    margin-left: -450px;
+    height: 220px;
+    margin-left: -230px;
   }
 
   .header-cover {
@@ -695,8 +695,7 @@ button:hover {
 
   /* ============ DEVELOPER ============ */
   .container5 {
-    margin: 20px 10px;
-    padding: 15px;
+    margin: 20px auto;
   }
 
   .container5 h2 {

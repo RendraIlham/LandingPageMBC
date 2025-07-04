@@ -547,7 +547,7 @@ button:hover {
 /* ========================= */
 /* RESPONSIVE MOBILE FIXES  */
 /* ========================= */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1440px) {
   /* ============ HEADER ============ */
   header {
     height: auto;

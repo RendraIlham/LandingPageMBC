@@ -544,44 +544,50 @@ button:hover {
     }
 }
 
-/* ========================= */
-/* RESPONSIVE MOBILE FIXES  */
-/* ========================= */
 @media screen and (max-width: 1081px) {
   /* ============ HEADER ============ */
-  header {
-    height: auto;
-    padding-bottom: 20px;
-  }
+    header {
+        height: auto;
+        padding-bottom: 20px;
+    }
 
-  .head {
-    margin-top: 20px;
-    padding: 0 10px;
-  }
+    .head {
+        margin-top: 20px;
+        padding: 0 10px;
+    }
 
-  .h1-head {
-    font-size: 36px;
-    text-shadow: none;
-  }
+    .h1-head {
+        font-size: 100px;
+        text-shadow: 5px 5px 1px rgba(0, 0, 0, 0.9);
+    }
 
-  .header-left-group img {
-    height: 220px;
-    margin-left: -230px;
-  }
+    .header-cover {
+        display: flex;
+        align-items: center;
+        padding: 10px 50px;
+    }
 
-  .header-cover {
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px 20px;
-  }
+    .header-left-group {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .header-left-group img {
+        height: 200px;
+        width: auto;
+    }
 
   /* Toggle button terlihat */
-  #tombol1 {
-    display: block;
-    font-size: 80px;
-    margin-right: -800px;
-    margin-top: -80px;
-  }
+    #tombol1 {
+        background: none;
+        border: none;
+        font-size: 40px;
+        color: white;
+        display: block;
+        cursor: pointer;
+        margin-right: -450px;
+    }
 
   .nav1, .nav {
     display: none;
@@ -603,24 +609,27 @@ button:hover {
   /* ============ STICKY NAVBAR ============ */
   .container1 {
     flex-direction: column;
-    align-items: center;
     gap: 10px;
-    padding: 15px 50px;
+    padding: 27px ;
   }
 
   .h1-container1 {
-    font-size: 24px;
-    text-align: center;
-    margin-left: -160px;
+    font-size: 40px;
+    margin-left: -660px;
     padding-bottom: 15px;
     margin-bottom: -10px;
+    color: black;
+  }
+
+  .h1-hitam {
+    color: black;
   }
 
   #tombol2 {
     display: block;
-    font-size: 24px;
-    margin-right: -340px;
-    margin-top: -60px;
+    font-size: 40px;
+    margin-right: -900px;
+    margin-top: -80px;
   }
 
   /* ============ BERANDA ============ */
@@ -739,27 +748,6 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-}
-
-/* Header logo */
-.header-left-group img {
-  height: auto;
-  max-height: 120px;
-}
-
-/* Tombol menu jangan terlalu geser ke kanan */
-#tombol1,
-#tombol2 {
-  margin: 0;
-  padding: 0;
-  font-size: 28px;
-}
-
-/* Sticky container jangan pakai margin negatif */
-.container1 {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  padding: 10px 20px;
 }
 
 /* Hindari kontainer ngeluarin isi layar */

@@ -547,7 +547,7 @@ button:hover {
 /* ========================= */
 /* RESPONSIVE MOBILE FIXES  */
 /* ========================= */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   /* ============ BAGIAN DIVISI ============ */
   .container3-1 > div {
     padding: 10px;

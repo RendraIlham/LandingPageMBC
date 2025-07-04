@@ -552,7 +552,7 @@ button:hover {
   header {
     height: auto;
     padding-bottom: 20px;
-    width: 100%;
+    width: 100vh;
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Gedung-Bangkit.jpg");
     background-size: cover;

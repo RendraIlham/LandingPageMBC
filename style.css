@@ -589,22 +589,38 @@ button:hover {
         margin-right: -400px;
     }
 
-  .nav1, .nav {
-    display: none;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    width: 100%;
-  }
+    .nav1, .nav {
+        display: none;
+        flex-direction: column;
+        background-color: white; /* Warna latar putih */
+        position: absolute;
+        top: 60px; /* muncul di bawah tombol */
+        right: 10px;
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        z-index: 9999;
+        width: max-content;
+    }
 
-  .nav1.show, .nav.show {
-    display: flex;
-  }
+    /* Tampilkan dropdown saat diklik */
+    .nav1.show, .nav.show {
+        display: flex;
+    }
 
-  .nav1 a, .nav a {
-    font-size: 16px;
-    margin: 5px 0;
-  }
+    .nav1 a, .nav a {
+        color: black;
+        font-size: 16px;
+        padding: 10px 15px;
+        text-decoration: none;
+        display: block;
+        font-weight: bold;
+    }
+
+    .nav1 a:hover, .nav a:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+        border-radius: 5px;
+    }
 
   /* ============ STICKY NAVBAR ============ */
   .container1 {

@@ -75,6 +75,7 @@ header {
     color: white;
     font-weight: bold;
     margin-right: 15px;
+    font-size: 17px;
 }
 
 .nav1 a:hover {
@@ -124,6 +125,7 @@ header {
     margin-right: 15px;
     color: black;
     font-weight: bold;
+    font-size: 17px;
 }
 
 .nav a:hover {
@@ -171,11 +173,15 @@ header {
     text-align: center;
 }
 
+.con3 {
+    text-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.7);
+}
+
 .container3-1 {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    margin: 0 20px 20px;
+    margin: 20px;
 }
 
 .container3-1-1 {
@@ -184,19 +190,122 @@ header {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: -25px;
+}
+
+.container3-1-1 h2 {
+    margin-top: -30px;
+    text-align: center;
+    color: black;
+    font-size: 23px;
+}
+
+.container3-1-1 p {
+    text-align: center;
+    font-size: 21px;
+    font-weight: 500;
+    padding: 20px;
+    color: black;
+    margin-top: -30px;
+}
+
+.container3-1-2 {
+    background: white;
+    flex: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.container3-1-2 h2 {
+    margin-top: -30px;
+    text-align: center;
+    color: black;
+    font-size: 23px;
+}
+
+.container3-1-2 p {
+    text-align: center;
+    font-size: 21px;
+    font-weight: 500;
+    padding: 20px;
+    color: black;
+    margin-top: -30px;
+}
+
+.container3-1-3 {
+    background: white;
+    flex: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.container3-1-3 h2 {
+    margin-top: -30px;
+    text-align: center;
+    color: black;
+    font-size: 23px;
+}
+
+.container3-1-3 p {
+    text-align: center;
+    font-size: 21px;
+    font-weight: 500;
+    padding: 20px;
+    color: black;
+    margin-top: -30px;
+}
+
+.container3-1-4 {
+    background: white;
+    flex: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.container3-1-4 h2 {
+    margin-top: -30px;
+    text-align: center;
+    color: black;
+    font-size: 23px;
+}
+
+.container3-1-4 p {
+    text-align: center;
+    font-size: 21px;
+    font-weight: 500;
+    padding: 20px;
+    color: black;
+    margin-top: -30px;
 }
 
 /* CONTAINER 4 */
 .container4 {
     background-color: #c4c4c4;
-    padding: 50px 15px;
+    padding-bottom: 50px;
+    padding-top: auto;
 }
 
 .container4 h2 {
-    text-align: center;
-    font-size: 30px;
+    padding: 25px 50px;
     font-weight: bold;
     color: black;
+    font-size: 30px;
+    text-align: center;
+}
+
+.con4 {
+    text-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.7);
 }
 
 form {
@@ -205,7 +314,8 @@ form {
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     max-width: 80%;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 input, textarea {
@@ -225,11 +335,127 @@ button {
     cursor: pointer;
     font-weight: bold;
     font-size: 17px;
-    width: 100%;
+    width: 100%; 
+    text-align: center;
 }
 
 button:hover {
     background-color: #006bb3;
+}
+
+.container4-1 {
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    margin-left: 2px;
+}
+
+.h1-con4-1-bold {
+    font-weight: bold;
+    color: black;
+}
+
+.h1-con4-1-reg {
+    font-weight: light;
+    color: black;
+}
+
+.container4-2 {
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    margin-left: 2px;
+}
+
+.h1-con4-2-bold {
+    font-weight: bold;
+    color: black;
+}
+
+.h1-con4-2-reg {
+    font-weight: light;
+    color: black;
+}
+
+.container4-3 {
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    margin-left: 2px;
+}
+
+.h1-con4-3-bold {
+    font-weight: bold;
+    color: black;
+}
+
+.h1-con4-3-reg {
+    font-weight: light;
+    color: black;
+}
+
+.container4-4 {
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    margin-left: 2px;
+}
+
+.h1-con4-4-bold {
+    font-weight: bold;
+    color: black;
+}
+
+.h1-con4-4-reg {
+    font-weight: light;
+    color: black;
+}
+
+.container4-5 {
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    margin-left: 2px;
+}
+
+.h1-con4-5-bold {
+    font-weight: bold;
+    color: black;
+}
+
+.h1-con4-5-reg {
+    font-weight: light;
+    color: black;
+}
+
+.notifikasi {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+}
+
+.container4-6-maps iframe {
+    width: 100%;
+    height: 350px;
+    border-radius: 20px;
+}
+
+.notifikasi.sukses {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.notifikasi.gagal {
+    background-color: #f8d7da;
+    color: #721c24;
 }
 
 /* CONTAINER 5 */
@@ -239,19 +465,70 @@ button:hover {
     padding: 20px;
     border-radius: 20px;
     box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
-    margin: 50px 10%;
-    text-align: center;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .container5 h2 {
-    font-size: 30px;
+    padding: 25px 50px;
     font-weight: bold;
+    color: black;
+    font-size: 30px;
+    padding-bottom: 15px;
+    text-align: center;
+    padding-top: 0;
     text-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.7);
+}
+
+.container5-1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.container5-2 {
+    text-align: center;
+}
+
+.container5-3 {
+    text-align: center;
+}
+
+.container5-4 {
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+
+.container5-4 a {
+    text-decoration: none;
+    color: black;
+}
+
+.container5-5 {
+    text-align: center;
+}
+
+.container5-5-bold {
+    font-weight: bold;
+}
+
+.container5-6 {
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+
+.container5-6 a {
+    color: black;
+    text-decoration: none;
 }
 
 .container6 {
     background-color: #ccc;
     text-align: center;
+    height: 15%;
     padding: 35px;
 }
 

@@ -720,3 +720,60 @@ button:hover {
     padding: 20px;
   }
 }
+
+/* ========================= */
+/* FIX OVERFLOW DAN RESPONSIVE */
+/* ========================= */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Batasi semua elemen agar tidak melebihi lebar viewport */
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+/* Pastikan gambar tidak melebar keluar layar */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Header logo */
+.header-left-group img {
+  height: auto;
+  max-height: 120px;
+}
+
+/* Tombol menu jangan terlalu geser ke kanan */
+#tombol1,
+#tombol2 {
+  margin: 0;
+  padding: 0;
+  font-size: 28px;
+}
+
+/* Sticky container jangan pakai margin negatif */
+.container1 {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding: 10px 20px;
+}
+
+/* Hindari kontainer ngeluarin isi layar */
+.container3-1 > div,
+.container5 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}
+
+/* Hindari scroll horizontal di navigasi */
+.nav1,
+.nav {
+  overflow-x: hidden;
+  flex-wrap: wrap;
+}

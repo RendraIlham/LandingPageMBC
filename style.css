@@ -2,6 +2,789 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f0f2f5;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Gedung-Bangkit.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header-cover {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+.header-left-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-left-group img {
+    height: 150px;
+    width: auto;
+}
+
+.head {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -120px;
+}
+
+.h1-head {
+    animation: fadeSlideIn 1s ease-out forwards;
+    animation-delay: 0.9s;
+    opacity: 0;
+    font-size: 72px;
+    text-shadow: 4px 3px 2px rgba(0, 0, 0, 0.7);
+}
+
+.h1-merah {
+    color: red;
+}
+
+.h1-putih {
+    color: white;
+}
+
+.nav1 {
+    animation: fadeSlideIn 1s ease-out forwards;
+    animation-delay: 0.7s;
+    opacity: 0;
+}
+
+.nav1 a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 15px;
+    font-size: 17px;
+}
+
+.nav1 a:hover {
+    color: red;
+    transition: 0.2s;
+}
+
+#tombol1 {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+
+/* STICKY NAV */
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    font-weight: bold;
+    border-bottom: 2px solid red;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+}
+
+.h1-container1 {
+    margin: 0;
+    padding: 0;
+}
+
+#tombol2 {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: black;
+    display: none;
+    cursor: pointer;
+}
+
+.nav a {
+    text-decoration: none;
+    margin-right: 15px;
+    color: black;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.nav a:hover {
+    color: red;
+    transition: 0.2s ease-in-out;
+}
+
+/* SECTION SPACING */
+#home, #services, #contact, #developer {
+    scroll-margin-top: 70px;
+}
+
+/* CONTAINER 2 */
+.container2-1 {
+    padding: 60px;
+    text-align: center;
+    background-color: #c4c4c4;
+}
+
+.container2-1 h2 {
+    color: black;
+}
+
+.container2-1 p {
+    font-size: 21px;
+    font-weight: 500;
+    padding: 20px;
+    color: black;
+}
+
+.container2-1-merah {
+    color: red;
+}
+
+.container2-1-hitam {
+    color: black;
+}
+
+/* CONTAINER 3 */
+.container3 h2 {
+    padding: 25px 50px;
+    font-weight: bold;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+}
+
+.con3 {
+    text-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.7);
+}
+
+.container3-1 {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.container3-1-1 {
+    background: white;
+    flex: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: -25px;
+}
+
+.container3-1-1 h2 {
+    margin-top: -30px;
+    text-align: center;
+    color: black;
+    font-size: 23px;
+}
+
+.container3-1-1 p {
+    text-align: center;
+    font-size: 21px;
+    font-weight: 500;
+    padding: 20px;
+    color: black;
+    margin-top: -30px;
+}
+
+.container3-1-2 {
+    background: white;
+    flex: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.container3-1-2 h2 {
+    margin-top: -30px;
+    text-align: center;
+    color: black;
+    font-size: 23px;
+}
+
+.container3-1-2 p {
+    text-align: center;
+    font-size: 21px;
+    font-weight: 500;
+    padding: 20px;
+    color: black;
+    margin-top: -30px;
+}
+
+.container3-1-3 {
+    background: white;
+    flex: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.container3-1-3 h2 {
+    margin-top: -30px;
+    text-align: center;
+    color: black;
+    font-size: 23px;
+}
+
+.container3-1-3 p {
+    text-align: center;
+    font-size: 21px;
+    font-weight: 500;
+    padding: 20px;
+    color: black;
+    margin-top: -30px;
+}
+
+.container3-1-4 {
+    background: white;
+    flex: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.container3-1-4 h2 {
+    margin-top: -30px;
+    text-align: center;
+    color: black;
+    font-size: 23px;
+}
+
+.container3-1-4 p {
+    text-align: center;
+    font-size: 21px;
+    font-weight: 500;
+    padding: 20px;
+    color: black;
+    margin-top: -30px;
+}
+
+/* CONTAINER 4 */
+.container4 {
+    background-color: #c4c4c4;
+    padding-bottom: 50px;
+    padding-top: auto;
+}
+
+.container4 h2 {
+    padding: 25px 50px;
+    font-weight: bold;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+}
+
+.con4 {
+    text-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.7);
+}
+
+form {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #008cff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 17px;
+    width: 100%; 
+    text-align: center;
+}
+
+button:hover {
+    background-color: #006bb3;
+}
+
+.container4-1 {
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    margin-left: 2px;
+}
+
+.h1-con4-1-bold {
+    font-weight: bold;
+    color: black;
+}
+
+.h1-con4-1-reg {
+    font-weight: light;
+    color: black;
+}
+
+.container4-2 {
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    margin-left: 2px;
+}
+
+.h1-con4-2-bold {
+    font-weight: bold;
+    color: black;
+}
+
+.h1-con4-2-reg {
+    font-weight: light;
+    color: black;
+}
+
+.container4-3 {
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    margin-left: 2px;
+}
+
+.h1-con4-3-bold {
+    font-weight: bold;
+    color: black;
+}
+
+.h1-con4-3-reg {
+    font-weight: light;
+    color: black;
+}
+
+.container4-4 {
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    margin-left: 2px;
+}
+
+.h1-con4-4-bold {
+    font-weight: bold;
+    color: black;
+}
+
+.h1-con4-4-reg {
+    font-weight: light;
+    color: black;
+}
+
+.container4-5 {
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    margin-left: 2px;
+}
+
+.h1-con4-5-bold {
+    font-weight: bold;
+    color: black;
+}
+
+.h1-con4-5-reg {
+    font-weight: light;
+    color: black;
+}
+
+.notifikasi {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+}
+
+.container4-6-maps iframe {
+    width: 100%;
+    height: 350px;
+    border-radius: 20px;
+}
+
+.notifikasi.sukses {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.notifikasi.gagal {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* CONTAINER 5 */
+.container5 {
+    background: white;
+    flex: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.container5 h2 {
+    padding: 25px 50px;
+    font-weight: bold;
+    color: black;
+    font-size: 30px;
+    padding-bottom: 15px;
+    text-align: center;
+    padding-top: 0;
+    text-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.7);
+}
+
+.container5-1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.container5-2 {
+    text-align: center;
+}
+
+.container5-3 {
+    text-align: center;
+}
+
+.container5-4 {
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+
+.container5-4 a {
+    text-decoration: none;
+    color: black;
+}
+
+.container5-5 {
+    text-align: center;
+}
+
+.container5-5-bold {
+    font-weight: bold;
+}
+
+.container5-6 {
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+
+.container5-6 a {
+    color: black;
+    text-decoration: none;
+}
+
+.container6 {
+    background-color: #ccc;
+    text-align: center;
+    height: 15%;
+    padding: 35px;
+}
+
+/* ANIMASI */
+@keyframes fadeSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 1081px) {
+  /* ============ HEADER ============ */
+    header {
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .head {
+        margin-top: 20px;
+        padding: 0 10px;
+    }
+
+    .h1-head {
+        font-size: 100px;
+        text-shadow: 5px 5px 1px rgba(0, 0, 0, 0.9);
+    }
+
+    .header-cover {
+        display: flex;
+        align-items: center;
+        padding: 10px 50px;
+    }
+
+    .header-left-group {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .header-left-group img {
+        height: 200px;
+        width: auto;
+    }
+
+  /* Toggle button terlihat */
+    #tombol1 {
+        background: none;
+        border: none;
+        font-size: 40px;
+        color: white;
+        display: block;
+        cursor: pointer;
+        margin-right: -400px;
+    }
+
+    .nav1, .nav {
+        display: none;
+        flex-direction: column;
+        background-color: white; /* Warna latar putih */
+        position: absolute;
+        top: 60px; /* muncul di bawah tombol */
+        right: 10px;
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        z-index: 9999;
+        width: max-content;
+    }
+
+    /* Tampilkan dropdown saat diklik */
+    .nav1.show, .nav.show {
+        display: flex;
+    }
+
+    .nav1 a, .nav a {
+        color: black;
+        font-size: 16px;
+        padding: 10px 15px;
+        text-decoration: none;
+        display: block;
+        font-weight: bold;
+    }
+
+    .nav1 a:hover, .nav a:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+        border-radius: 5px;
+    }
+
+  /* ============ STICKY NAVBAR ============ */
+  .container1 {
+  flex-direction: column;
+  gap: 10px;
+  padding: 27px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: white;
+}
+
+  .h1-container1 {
+    font-size: 40px;
+    margin-left: -560px;
+    padding-bottom: 15px;
+    margin-bottom: -10px;
+    color: black;
+  }
+
+  .h1-hitam {
+    color: black;
+  }
+
+  #tombol2 {
+    display: block;
+    font-size: 40px;
+    margin-right: -800px;
+    margin-top: -80px;
+  }
+
+  /* ============ BERANDA ============ */
+  .container2-1 {
+    padding: 20px;
+  }
+
+  .container2-1 h2 {
+    font-size: 20px;
+  }
+
+  .container2-1 p {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  /* ============ DIVISI ============ */
+  .con3 {
+    margin-bottom: -40px;
+  }
+  
+  .container3-1 > div {
+    margin-top: 20px;
+    width: 95%;
+    gap: 20px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+  }
+
+  .container3-1 h2 {
+    font-size: 35px;
+    margin-top: -20px;
+  }
+
+  .container3-1 p {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  /* ============ HUBUNGI KAMI ============ */
+  .container4 h2 {
+    font-size: 24px;
+  }
+
+  form {
+    max-width: 95%;
+    padding: 15px;
+  }
+
+  input, textarea {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .container4 h1, .container4-1, .container4-2, .container4-3, .container4-4, .container4-5 {
+    font-size: 8px;
+    margin: 10px 0;
+  }
+
+  .container4-6-maps iframe {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 10px 0;
+    width: 100%;
+  }
+
+  /* ============ DEVELOPER ============ */
+  .container5 {
+    margin: 20px auto;
+  }
+
+  .container5 h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .container5 p {
+    font-size: 15px;
+    margin: 6px 0;
+    text-align: center;
+  }
+
+  .container5 a {
+    word-break: break-word;
+  }
+
+  /* ============ FOOTER ============ */
+  .container6 {
+    font-size: 14px;
+    padding: 20px;
+  }
+}
+
+/* ========================= */
+/* FIX OVERFLOW DAN RESPONSIVE */
+/* ========================= */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Batasi semua elemen agar tidak melebihi lebar viewport */
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+/* Pastikan gambar tidak melebar keluar layar */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Hindari kontainer ngeluarin isi layar */
+.container3-1 > div,
+.container5 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}
+
+/* Hindari scroll horizontal di navigasi */
+.nav1,
+.nav {
+  overflow-x: hidden;
+  flex-wrap: wrap;
 }
 
 body {

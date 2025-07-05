@@ -662,7 +662,7 @@ button:hover {
   }
 
   .container2-1 p {
-    font-size: 16px;
+    font-size: 12px;
     padding: 10px;
   }
 
@@ -679,12 +679,12 @@ button:hover {
   }
 
   .container3-1 h2 {
-    font-size: 18px;
-    margin-top: 0;
+    font-size: 25px;
+    margin-top: -20px;
   }
 
   .container3-1 p {
-    font-size: 16px;
+    font-size: 20px;
     padding: 10px;
   }
 
@@ -703,10 +703,8 @@ button:hover {
     padding: 10px;
   }
 
-  .container4 h1,
-  .container4-1, .container4-2, .container4-3,
-  .container4-4, .container4-5 {
-    font-size: 14px;
+  .container4 h1, .container4-1, .container4-2, .container4-3, .container4-4, .container4-5 {
+    font-size: 8px;
     margin: 10px 0;
   }
 

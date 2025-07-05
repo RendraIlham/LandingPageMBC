@@ -575,6 +575,7 @@ button:hover {
     .header-left-group img {
         height: 100px;
         width: auto;
+        margin-left: -20px;
     }
 
   /* Toggle button terlihat */
@@ -585,7 +586,7 @@ button:hover {
         color: white;
         display: block;
         cursor: pointer;
-        margin-right: -90px;
+        margin-right: -130px;
     }
 
     .nav1, .nav {
@@ -625,7 +626,7 @@ button:hover {
   .container1 {
   flex-direction: column;
   gap: 10px;
-  padding: 27px;
+  padding: 15px;
   position: sticky;
   top: 0;
   z-index: 999;
@@ -634,9 +635,9 @@ button:hover {
 
   .h1-container1 {
     font-size: 20px;
-    margin-left: -170px;
-    padding-bottom: 15px;
-    margin-bottom: -10px;
+    margin-left: -190px;
+    
+    margin-top: 10px;
     color: black;
   }
 
@@ -647,8 +648,8 @@ button:hover {
   #tombol2 {
     display: block;
     font-size: 20px;
-    margin-right: -280px;
-    margin-top: -50px;
+    margin-right: -310px;
+    margin-top: -45px;
   }
 
   /* ============ BERANDA ============ */

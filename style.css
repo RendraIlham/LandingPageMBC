@@ -528,7 +528,6 @@ button:hover {
 .container6 {
     background-color: #ccc;
     text-align: center;
-    height: 15%;
     padding: 35px;
 }
 
@@ -557,7 +556,7 @@ button:hover {
     }
 
     .h1-head {
-        font-size: 30px;
+        font-size: 40px;
         text-shadow: 5px 5px 1px rgba(0, 0, 0, 0.9);
     }
 
@@ -574,7 +573,7 @@ button:hover {
     }
 
     .header-left-group img {
-        height: 70px;
+        height: 100px;
         width: auto;
     }
 
@@ -582,11 +581,11 @@ button:hover {
     #tombol1 {
         background: none;
         border: none;
-        font-size: 40px;
+        font-size: 20px;
         color: white;
         display: block;
         cursor: pointer;
-        margin-right: -400px;
+        margin-right: -90px;
     }
 
     .nav1, .nav {
@@ -634,8 +633,8 @@ button:hover {
 }
 
   .h1-container1 {
-    font-size: 40px;
-    margin-left: -560px;
+    font-size: 20px;
+    margin-left: -170px;
     padding-bottom: 15px;
     margin-bottom: -10px;
     color: black;
@@ -647,9 +646,9 @@ button:hover {
 
   #tombol2 {
     display: block;
-    font-size: 40px;
-    margin-right: -800px;
-    margin-top: -80px;
+    font-size: 20px;
+    margin-right: -280px;
+    margin-top: -50px;
   }
 
   /* ============ BERANDA ============ */
@@ -722,7 +721,15 @@ button:hover {
 
   /* ============ DEVELOPER ============ */
   .container5 {
-    margin: 20px auto;
+    background: white;
+    flex: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+    margin-right: 30%;
+    margin-left: 30%;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 
   .container5 h2 {

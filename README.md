@@ -60,7 +60,7 @@ Untuk menjalankan website ini di lingkungan pengembangan lokal Anda, Anda memerl
 2.  **Login ke Netlify:**
     Buka https://www.netlify.com/ dan login dengan akun GitHub Anda.
     
-3.  **Tambah Proyek Baru:**
+3.  **Tambah Proyek Baru**
     * Di dashboard Netlify, klik "Add new project".
     * Pilih "Import an existing project"
     * Pilih GitHub sebagai penyedia Git Anda dan berikan otorisasi jika diminta.
@@ -68,7 +68,7 @@ Untuk menjalankan website ini di lingkungan pengembangan lokal Anda, Anda memerl
 4.  **Pilih Repository:**
     Pilih repository website Anda dari daftar yang tersedia.
 
-5.  **Konfigurasi Build (Build Settings):**
+5.  **Konfigurasi Build (Build Settings)**
 
     Isi seperti ini:
       * **Branch to deploy:** `main`
@@ -76,7 +76,7 @@ Untuk menjalankan website ini di lingkungan pengembangan lokal Anda, Anda memerl
       * **Build command:** Kosongkan 
       * **Publish directory:** Kosongkan
 
-7.  **Deploy:**
+7.  **Deploy**
       * Klik "Deploy nama-repository". Netlify akan secara otomatis mengambil kode Anda dari GitHub dan mendeploy-nya.
       * Setelah selesai, Anda akan mendapatkan URL unik untuk website Anda.
 
@@ -88,18 +88,22 @@ Untuk menjalankan website ini di lingkungan pengembangan lokal Anda, Anda memerl
 
 Untuk website yang di-deploy di Netlify, skrip PHP (`contact.php`) tidak akan dieksekusi karena Netlify adalah hosting untuk static site. Namun, fungsionalitas form kontak dapat diimplementasikan menggunakan fitur **Netlify Forms**.
 
-1.  **Modifikasi `index.html`:**
-    Tambahkan atribut `data-netlify="true"` ke tag `<form>` di `index.html` Anda:
+1.  **Modifikasi `index.html`**
+
+    Tambahkan atribut `data-netlify="true"` ke tag `<form>` di `index.html` Anda. Pastikan form tersebut berisi semua input yang diperlukan:
     ```html
     <form action="contact.php" method="POST" data-netlify="true">
+        <input type="text" name="Nama" placeholder="Nama Anda">
+        <input type="email" name="Email" placeholder="Email Anda">
+        <textarea name="Pesan" placeholder="Tulis kritik/saran Anda"></textarea>
+        <button type="submit">Kirim</button>
         </form>
     ```
-    (Atribut `action="contact.php"` tetap dipertahankan sebagai fallback untuk pengembangan lokal, tetapi `data-netlify="true"` akan diutamakan oleh Netlify untuk memproses pengiriman form).
 
-2.  **Deploy Ulang:**
+3.  **Deploy Ulang:**
     Push perubahan ini ke GitHub Anda, dan Netlify akan otomatis mendeploy ulang situs Anda.
 
-3.  **Verifikasi:**
+4.  **Verifikasi:**
     Setelah deploy, kirim satu kali formulir (Anda bisa mengisi data dummy) dari website yang sudah di-deploy. Data yang dikirim akan muncul di bagian "Forms" di dashboard Netlify Anda.
 
 ### Konfigurasi SSL (Secure Sockets Layer)

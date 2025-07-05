@@ -28,7 +28,7 @@ Untuk menjalankan website ini di lingkungan pengembangan lokal Anda, Anda memerl
     Buka terminal atau Git Bash, lalu clone repository ini ke komputer Anda:
 
     ```bash
-    git clone [https://github.com/RendraIlham/LandingPageMBC.git]
+    git clone https://github.com/RendraIlham/LandingPageMBC.git
     ```
 3.  **Pindahkan ke Direktori Server Web**
 
@@ -58,7 +58,7 @@ Untuk menjalankan website ini di lingkungan pengembangan lokal Anda, Anda memerl
     Pastikan semua kode/file website Anda sudah di-push ke repository GitHub Anda.
     
 2.  **Login ke Netlify:**
-    Buka [https://www.netlify.com/] dan login dengan akun GitHub Anda.
+    Buka https://www.netlify.com/ dan login dengan akun GitHub Anda.
     
 3.  **Tambah Proyek Baru:**
     * Di dashboard Netlify, klik "Add new project".

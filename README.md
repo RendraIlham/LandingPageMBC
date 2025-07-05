@@ -19,8 +19,39 @@ LandingPageMBC/
 ├── style.css         # File CSS untuk styling dan responsivitas website
 
 ## Instalasi Lokal dan Deployment
-### Instalasi Lokal
-Tidak diisi karena memiliki kendala, sehingga backend tidak dapat diakses
+### Instalasi Lokal (untuk Pengembangan)
+
+Untuk menjalankan website ini di lingkungan pengembangan lokal Anda, Anda memerlukan server web yang mendukung PHP (seperti XAMPP, WAMP, MAMP, atau Laragon).
+
+1.  **Clone Repository**
+
+    Buka terminal atau Git Bash, lalu clone repository ini ke komputer Anda:
+
+    ```bash
+    git clone [https://github.com/RendraIlham/LandingPageMBC.git]
+    ```
+3.  **Pindahkan ke Direktori Server Web**
+
+    Pindahkan folder proyek yang telah di-clone (`LandingPageMBC`) ke direktori `htdocs` (untuk XAMPP/Apache), `www` (untuk WAMP), atau direktori server web lokal Anda lainnya.
+    Contoh (untuk XAMPP di Windows):
+
+    ```bash
+    mv LandingPageMBC C:\xampp\htdocs\
+    ```
+5.  **Mulai Server Web:**
+    Pastikan server Apache di XAMPP Control Panel Anda sudah berjalan.
+6.  **Akses Website:**
+    Buka browser web Anda dan akses website melalui URL:
+    `http://localhost/LandingPageMBC/`
+7.  **Perizinan File (Jika `data_contact.txt` tidak dibuat)**
+
+    Jika Anda mengalami masalah saat mengirim formulir dan file `data_contact.txt` tidak terbentuk, kemungkinan besar ini adalah masalah izin penulisan (file permissions) pada folder proyek atau file `data_contact.txt` itu sendiri. Pastikan server web Anda memiliki izin untuk menulis ke direktori proyek.
+    * **Untuk Windows:** Klik kanan pada folder proyek > Properties > Security tab. Berikan izin "Modify" dan "Write" kepada user yang menjalankan Apache (misalnya "Users" atau "IUSR").
+    * **Untuk Linux/macOS (via Terminal):**
+        ```bash
+        sudo chmod -R 755 /path/to/your/project/LandingPageMBC/
+        sudo chmod 664 /path/to/your/project/LandingPageMBC/data_contact.txt # Jika sudah ada
+        ```
 
 ### Deployment (Menggunakan Netlify)
 1.  **Pastikan Kode di GitHub**
@@ -54,7 +85,22 @@ Tidak diisi karena memiliki kendala, sehingga backend tidak dapat diakses
      * Klik "Change Project Name". Di sini, Anda dapat merubah nama website sesuai keinginan.
 
 ### Konfigurasi Backend (untuk Form Kontak)
-Tidak diisi karena backend tidak dapat diakses.
+
+Untuk website yang di-deploy di Netlify, skrip PHP (`contact.php`) tidak akan dieksekusi karena Netlify adalah hosting untuk static site. Namun, fungsionalitas form kontak dapat diimplementasikan menggunakan fitur **Netlify Forms**.
+
+1.  **Modifikasi `index.html`:**
+    Tambahkan atribut `data-netlify="true"` ke tag `<form>` di `index.html` Anda:
+    ```html
+    <form action="contact.php" method="POST" data-netlify="true">
+        </form>
+    ```
+    (Atribut `action="contact.php"` tetap dipertahankan sebagai fallback untuk pengembangan lokal, tetapi `data-netlify="true"` akan diutamakan oleh Netlify untuk memproses pengiriman form).
+
+2.  **Deploy Ulang:**
+    Push perubahan ini ke GitHub Anda, dan Netlify akan otomatis mendeploy ulang situs Anda.
+
+3.  **Verifikasi:**
+    Setelah deploy, kirim satu kali formulir (Anda bisa mengisi data dummy) dari website yang sudah di-deploy. Data yang dikirim akan muncul di bagian "Forms" di dashboard Netlify Anda.
 
 ### Konfigurasi SSL (Secure Sockets Layer)
 Netlify secara otomatis menyediakan sertifikat SSL/TLS gratis untuk semua situs yang di-deploy. Sehingga, saat url di copy, URL sudah menjadi "https".

@@ -624,10 +624,14 @@ button:hover {
 
   /* ============ STICKY NAVBAR ============ */
   .container1 {
-    flex-direction: column;
-    gap: 10px;
-    padding: 27px ;
-  }
+  flex-direction: column;
+  gap: 10px;
+  padding: 27px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: white;
+}
 
   .h1-container1 {
     font-size: 40px;

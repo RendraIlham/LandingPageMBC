@@ -3,14 +3,20 @@ Website resmi MBC Laboratory — pusat riset dan pengembangan dalam bidang Cyber
 
 ## Struktur Proyek
 LandingPageMBC/
-├── index.html        # Halaman utama website
-├── style.css         # File CSS untuk styling dan responsivitas websir\te
-├── script.js         # File JavaScript untuk interaktivitas (menu mobile, form handling, dan notifikasi)
-├── contact.php       # Skrip PHP untuk memproses pengiriman form kontak
-├── data_contact.txt  # File teks untuk menyimpan data form yang masuk (dibuat otomatis oleh contact.php)
-├── mbclab.png        # Logo MBC Laboratory
+
 ├── Gedung-Bangkit.jpg # Gambar background halaman pertama
+
 ├── README.md         # Dokumentasi proyek
+
+├── contact.php       # Skrip PHP untuk memproses pengiriman form kontak
+
+├── index.html        # Halaman utama website
+
+├── mbclab.png        # Logo MBC Laboratory
+
+├── script.js         # File JavaScript untuk interaktivitas (menu mobile, form handling, dan notifikasi)
+
+├── style.css         # File CSS untuk styling dan responsivitas website
 
 ## Instalasi Lokal dan Deployment
 ### Instalasi Lokal
@@ -23,7 +29,7 @@ Tidak diisi karena memiliki kendala, sehingga backend tidak dapat diakses
 2.  **Login ke Netlify:**
     Buka [https://www.netlify.com/] dan login dengan akun GitHub Anda.
     
-3.  **Buat Situs Baru dari Git:**
+3.  **Tambah Proyek Baru:**
     * Di dashboard Netlify, klik "Add new project".
     * Pilih "Import an existing project"
     * Pilih GitHub sebagai penyedia Git Anda dan berikan otorisasi jika diminta.
@@ -32,17 +38,18 @@ Tidak diisi karena memiliki kendala, sehingga backend tidak dapat diakses
     Pilih repository website Anda dari daftar yang tersedia.
 
 5.  **Konfigurasi Build (Build Settings):**
+
     Isi seperti ini:
       * **Branch to deploy:** `main`
-      * **Base directory:** Kosongkan (karena `index.html` ada di root)
-      * **Build command:** Kosongkan (ini adalah static site)
+      * **Base directory:** Kosongkan 
+      * **Build command:** Kosongkan 
       * **Publish directory:** Kosongkan
 
-6.  **Deploy:**
+7.  **Deploy:**
       * Klik "Deploy nama-repository". Netlify akan secara otomatis mengambil kode Anda dari GitHub dan mendeploy-nya.
       * Setelah selesai, Anda akan mendapatkan URL unik untuk website Anda.
 
-7.  **Kustom Nama Website**
+8.  **Kustom Nama Website**
      * Setelah di deploy, klik "Project Configuration".
      * Klik "Change Project Name". Di sini, Anda dapat merubah nama website sesuai keinginan.
 
@@ -50,4 +57,4 @@ Tidak diisi karena memiliki kendala, sehingga backend tidak dapat diakses
 Tidak diisi karena backend tidak dapat diakses.
 
 ### Konfigurasi SSL (Secure Sockets Layer)
-Netlify secara otomatis menyediakan sertifikat SSL/TLS gratis untuk semua situs yang di-deploy. Sehingga, saat url di copy, url udah menjadi "https".
+Netlify secara otomatis menyediakan sertifikat SSL/TLS gratis untuk semua situs yang di-deploy. Sehingga, saat url di copy, URL sudah menjadi "https".
